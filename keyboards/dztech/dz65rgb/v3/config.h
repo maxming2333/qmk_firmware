@@ -23,7 +23,10 @@
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
+#define FORCE_NKRO
+
 #ifdef RGB_MATRIX_ENABLE
+#    define RGB_DISABLE_TIMEOUT 300000 // 5 minutes (5 * 60 * 1000ms)
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED  // turn off effects when suspended
 #    define USB_SUSPEND_WAKEUP_DELAY 5000
 #    define RGB_MATRIX_KEYPRESSES
